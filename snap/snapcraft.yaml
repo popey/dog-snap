@@ -1,0 +1,27 @@
+name: dog
+base: core18
+adopt-info: dog
+summary: dog
+description: |
+  dog is a command-line DNS client.
+
+grade: stable
+confinement: strict
+
+parts:
+  dog:
+    plugin: rust
+    source: https://github.com/ogham/dog.git
+    build-packages:
+      - libssl-dev
+      - build-essential
+      - pkg-config
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags)"
+
+apps:
+  dog:
+    command: dog
+    plugs:
+      - network
