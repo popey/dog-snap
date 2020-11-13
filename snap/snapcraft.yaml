@@ -18,7 +18,7 @@ parts:
       - pkg-config
     override-pull: |
       snapcraftctl pull
-      snapcraftctl set-version "$(git describe --tags)"
+      snapcraftctl set-version "$(git describe --tags | tr -d 'v')"
 
 apps:
   dog:
