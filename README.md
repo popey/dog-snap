@@ -3,7 +3,6 @@
 [![dog](https://github.com/popey/dog-snap/actions/workflows/test-snap-can-build.yml/badge.svg)](https://github.com/popey/dog-snap/actions)
 [![dog](https://snapcraft.io/dog/badge.svg)](https://snapcraft.io/dog)
 [![dog](https://snapcraft.io/dog/trending.svg?name=0)](https://snapcraft.io/dog)
-![Alt](https://repobeats.axiom.co/api/embed/92f27f15c3132a8d753c554c0ff8cfc28df67b46.svg "Repobeats analytics image")
 
 Dogs can look up!
 
@@ -55,6 +54,4 @@ Meta options:
   -v, --version            Print version information
 
 ```
-
-
 This is an unofficial snap of dog, built from the upstream source at https://github.com/ogham/dog
