@@ -1,5 +1,5 @@
 name: dog
-base: core20
+base: core24
 version: 0.1.0
 summary: dog
 description: |
@@ -8,13 +8,16 @@ description: |
 grade: stable
 confinement: strict
 
+platforms:
+  amd64:
+  arm64:
+
 parts:
   dog:
     plugin: rust
-    source: https://github.com/ogham/dog/archive/refs/tags/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
+    source: https://github.com/ogham/dog/archive/refs/tags/v$CRAFT_PROJECT_VERSION.tar.gz
     build-packages:
       - libssl-dev
-      - build-essential
       - pkg-config
 
 apps:
