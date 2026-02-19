@@ -1,12 +1,6 @@
-## dog
+## dog (ARCHIVED)
 
-[![dog](https://github.com/popey/dog-snap/actions/workflows/test-snap-can-build.yml/badge.svg)](https://github.com/popey/dog-snap/actions)
-[![dog](https://snapcraft.io/dog/badge.svg)](https://snapcraft.io/dog)
-[![dog](https://snapcraft.io/dog/trending.svg?name=0)](https://snapcraft.io/dog)
-
-Dogs can look up!
-
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/dog)
+> **Note:** The [upstream project](https://github.com/ogham/dog) is abandoned (last release 2021) and is incompatible with modern system libraries. This snap has been unlisted from the Snap Store and this repo is archived.
 
 dog is a command-line DNS client, like `dig`. It has colourful output, understands normal command-line argument syntax, supports the DNS-over-TLS and DNS-over-HTTPS protocols, and can emit JSON.
 
