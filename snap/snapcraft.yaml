@@ -14,6 +14,8 @@ parts:
     source: https://github.com/ogham/dog/archive/refs/tags/v$CRAFT_PROJECT_VERSION.tar.gz
     override-build: |
       # The release lockfile predates OpenSSL 3, provided by core24.
+      # Refresh the shared macro dependencies locked by the old upstream release.
+      cargo update -p openssl --recursive
       cargo update -p openssl --precise 0.10.81
       cargo update -p openssl-sys --precise 0.9.117
       craftctl default
