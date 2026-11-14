@@ -1,6 +1,6 @@
 name: dog
 base: core24
-version: 0.1.0
+version: 'null'
 summary: dog
 description: |
   dog is a command-line DNS client.
